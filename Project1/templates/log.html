@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Blockchain </title>
+		</script>
+	</head>
+	<body>
+		<h1>Login</h1>
+		<form  action="{{ url_for('login1') }}" method="post">
+			Username: <input type="text" name = "username" required>
+			Password: <input type="text" name = "password" required>
+			<br/>
+			<button> Submit</button>
+		</form>
+		<br/><br/><br/>
+		<p> <i>{{ get_flashed_messages()[0] }}</i></p>
+	</body>
+</html>
+
+
+
